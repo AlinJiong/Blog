@@ -17,6 +17,9 @@ class ArticlePost(models.Model):
     class Meta:
         # 根据创建时间 倒序 排布
         ordering = ('-create_time', )
+        db_table = 'articlepost'
+        verbose_name = "评论"
+        verbose_name_plural = verbose_name
 
     def __str__(self):
         return self.title
