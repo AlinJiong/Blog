@@ -12,7 +12,7 @@
         <h1 class="col-12 mt-4 mb-4">{{article.title}}</h1>
         <div class="col-12 alert alert-success"> 作者: {{article.author}}</div>
         <div class="col-12">
-            <p>{{article.content}}</p>
+            <p>{{article.content|safe}}</p>
         </div>
     </div>
 </div>
