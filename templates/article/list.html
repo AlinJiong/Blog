@@ -4,7 +4,7 @@
 <!-- 写入base中的title -->
 
 {% block title %}
-    首页
+首页
 {% endblock title %}
 
 {% block content %}
@@ -18,7 +18,7 @@
                 <p class="card-text">{{article.content|slice:'100'}}</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-primary">阅读本文</a>
+                <a href="{% url 'article:article_detail' article.id %}" class="btn btn-primary">阅读本文</a>
             </div>
 
         </div>
