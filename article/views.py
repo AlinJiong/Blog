@@ -38,10 +38,16 @@ def article_create(request):
             new_article = article_post_form.save(commit=False)
             new_article.author = User.objects.get(id=1)
             new_article.save()
-            return HttpResponseRedirect('article_list')
+            return HttpResponseRedirect('/article/article_list')
             #return redirect('article:article_list')
         else:
             return HttpResponse('--表单内容有误，请重新填写--')
     else:
         article_post_form = ArticlePostForm()
         return render(request, 'article/create.html', locals())
+
+
+def article_delete(request, id):
+    article = ArticlePost.objects.get(id=id)
+    article.delete()
+    return HttpResponseRedirect('/article/article_list')
