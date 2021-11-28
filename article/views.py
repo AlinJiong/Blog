@@ -48,6 +48,9 @@ def article_create(request):
 
 
 def article_delete(request, id):
-    article = ArticlePost.objects.get(id=id)
-    article.delete()
-    return HttpResponseRedirect('/article/article_list')
+    if request.method == 'POST':
+        article = ArticlePost.objects.get(id=id)
+        article.delete()
+        return HttpResponseRedirect('/article/article_list')
+    else:
+        return HttpResponse("仅允许post请求！")
