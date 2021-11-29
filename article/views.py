@@ -54,3 +54,20 @@ def article_delete(request, id):
         return HttpResponseRedirect('/article/article_list')
     else:
         return HttpResponse("仅允许post请求！")
+
+
+def article_update(request, id):
+    article = ArticlePost.objects.get(id=id)
+    if request.method == 'POST':
+        article_post_form = ArticlePostForm(data=request.POST)
+        if article_post_form.is_valid():
+            article.title = request.POST['title']
+            article.content = request.POST['content']
+            article.save()
+            return HttpResponseRedirect('/article/article_detail/%s' %
+                                        (article.id))
+        else:
+            return HttpResponse("数据不合法！")
+    else:
+        article_post_form = ArticlePostForm()
+        return render(request, 'article/update.html', locals())
