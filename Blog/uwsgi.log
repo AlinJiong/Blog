@@ -1,0 +1,262 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Nov 30 22:21:57 2021] ***
+compiled with version: 4.8.5 on 24 November 2021 16:02:39
+os: Linux-5.13.0-21-generic #21-Ubuntu SMP Tue Oct 19 08:59:28 UTC 2021
+nodename: alin-Lenovo-Legion-R9000P2021H
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/alin/桌面/Blog/Blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/alin/anaconda3/bin/uwsgi
+chdir() to /home/alin/桌面/Blog
+your processes number limit is 55149
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.8.8 (default, Apr 13 2021, 19:58:26)  [GCC 7.3.0]
+Python main interpreter initialized at 0x14c7c80
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14c7c80 pid: 16297 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16297)
+spawned uWSGI worker 1 (pid: 16299, cores: 2)
+[pid: 16299|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1081 bytes} [Tue Nov 30 22:22:20 2021] GET /article/article_list => generated 1640 bytes in 78 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/md_css/monokai.css
+Not Found: /static/bootstrap/css/bootstrap.min.css
+[pid: 16299|app: 0|req: 3/2] 127.0.0.1 () {54 vars in 970 bytes} [Tue Nov 30 22:22:20 2021] GET /static/md_css/monokai.css => generated 2115 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 4/3] 127.0.0.1 () {54 vars in 996 bytes} [Tue Nov 30 22:22:20 2021] GET /static/bootstrap/css/bootstrap.min.css => generated 2154 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/jquery/jquery-3.3.1.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+[pid: 16299|app: 0|req: 5/4] 127.0.0.1 () {54 vars in 964 bytes} [Tue Nov 30 22:22:20 2021] GET /static/jquery/jquery-3.3.1.js => generated 2127 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 6/5] 127.0.0.1 () {54 vars in 978 bytes} [Tue Nov 30 22:22:20 2021] GET /static/bootstrap/js/bootstrap.min.js => generated 2148 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/layer/layer.js
+[pid: 16299|app: 0|req: 6/6] 127.0.0.1 () {54 vars in 948 bytes} [Tue Nov 30 22:22:20 2021] GET /static/layer/layer.js => generated 2103 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 7/7] 127.0.0.1 () {58 vars in 1112 bytes} [Tue Nov 30 22:22:23 2021] GET /article/article_list => generated 1640 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/md_css/monokai.css
+[pid: 16299|app: 0|req: 9/8] 127.0.0.1 () {54 vars in 996 bytes} [Tue Nov 30 22:22:23 2021] GET /static/bootstrap/css/bootstrap.min.css => generated 2154 bytes in 40 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 10/9] 127.0.0.1 () {54 vars in 970 bytes} [Tue Nov 30 22:22:23 2021] GET /static/md_css/monokai.css => generated 2115 bytes in 40 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/jquery/jquery-3.3.1.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+[pid: 16299|app: 0|req: 11/11] 127.0.0.1 () {54 vars in 964 bytes} [Tue Nov 30 22:22:23 2021] GET /static/jquery/jquery-3.3.1.js => generated 2127 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 11/11] 127.0.0.1 () {54 vars in 978 bytes} [Tue Nov 30 22:22:23 2021] GET /static/bootstrap/js/bootstrap.min.js => generated 2148 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/layer/layer.js
+[pid: 16299|app: 0|req: 12/12] 127.0.0.1 () {54 vars in 948 bytes} [Tue Nov 30 22:22:23 2021] GET /static/layer/layer.js => generated 2103 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 13/13] 127.0.0.1 () {58 vars in 1141 bytes} [Tue Nov 30 22:22:25 2021] GET /article/article_list => generated 1640 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+Not Found: /static/md_css/monokai.css
+[pid: 16299|app: 0|req: 15/14] 127.0.0.1 () {54 vars in 970 bytes} [Tue Nov 30 22:22:25 2021] GET /static/md_css/monokai.css => generated 2115 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/bootstrap/css/bootstrap.min.css
+[pid: 16299|app: 0|req: 16/15] 127.0.0.1 () {54 vars in 996 bytes} [Tue Nov 30 22:22:25 2021] GET /static/bootstrap/css/bootstrap.min.css => generated 2154 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/jquery/jquery-3.3.1.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+[pid: 16299|app: 0|req: 17/16] 127.0.0.1 () {54 vars in 964 bytes} [Tue Nov 30 22:22:25 2021] GET /static/jquery/jquery-3.3.1.js => generated 2127 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 16299|app: 0|req: 18/17] 127.0.0.1 () {54 vars in 978 bytes} [Tue Nov 30 22:22:25 2021] GET /static/bootstrap/js/bootstrap.min.js => generated 2148 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/layer/layer.js
+[pid: 16299|app: 0|req: 18/18] 127.0.0.1 () {54 vars in 948 bytes} [Tue Nov 30 22:22:25 2021] GET /static/layer/layer.js => generated 2103 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 16299|app: 0|req: 19/19] 127.0.0.1 () {58 vars in 1145 bytes} [Tue Nov 30 22:22:26 2021] GET /article/article_create => generated 2462 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Not Found: /static/md_css/monokai.css
+Not Found: /static/bootstrap/css/bootstrap.min.css
+[pid: 16299|app: 0|req: 21/20] 127.0.0.1 () {54 vars in 972 bytes} [Tue Nov 30 22:22:26 2021] GET /static/md_css/monokai.css => generated 2115 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 21/21] 127.0.0.1 () {54 vars in 998 bytes} [Tue Nov 30 22:22:26 2021] GET /static/bootstrap/css/bootstrap.min.css => generated 2154 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/jquery/jquery-3.3.1.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+[pid: 16299|app: 0|req: 23/22] 127.0.0.1 () {54 vars in 966 bytes} [Tue Nov 30 22:22:26 2021] GET /static/jquery/jquery-3.3.1.js => generated 2127 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 24/23] 127.0.0.1 () {54 vars in 980 bytes} [Tue Nov 30 22:22:26 2021] GET /static/bootstrap/js/bootstrap.min.js => generated 2148 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/layer/layer.js
+[pid: 16299|app: 0|req: 24/24] 127.0.0.1 () {54 vars in 950 bytes} [Tue Nov 30 22:22:26 2021] GET /static/layer/layer.js => generated 2103 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 25/25] 127.0.0.1 () {48 vars in 808 bytes} [Tue Nov 30 22:23:14 2021] GET /article/article_create => generated 2462 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/md_css/monokai.css
+[pid: 16299|app: 0|req: 27/26] 127.0.0.1 () {48 vars in 860 bytes} [Tue Nov 30 22:23:14 2021] GET /static/bootstrap/css/bootstrap.min.css => generated 2154 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 28/27] 127.0.0.1 () {48 vars in 834 bytes} [Tue Nov 30 22:23:14 2021] GET /static/md_css/monokai.css => generated 2115 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/jquery/jquery-3.3.1.js
+[pid: 16299|app: 0|req: 29/28] 127.0.0.1 () {48 vars in 842 bytes} [Tue Nov 30 22:23:14 2021] GET /static/bootstrap/js/bootstrap.min.js => generated 2148 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 16299|app: 0|req: 30/29] 127.0.0.1 () {48 vars in 828 bytes} [Tue Nov 30 22:23:14 2021] GET /static/jquery/jquery-3.3.1.js => generated 2127 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/layer/layer.js
+[pid: 16299|app: 0|req: 30/30] 127.0.0.1 () {48 vars in 812 bytes} [Tue Nov 30 22:23:14 2021] GET /static/layer/layer.js => generated 2103 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 16299|app: 0|req: 31/31] 127.0.0.1 () {48 vars in 813 bytes} [Tue Nov 30 22:23:15 2021] GET /favicon.ico => generated 2073 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/bootstrap/js/bootstrap.min.js
+[pid: 16299|app: 0|req: 32/32] 127.0.0.1 () {48 vars in 842 bytes} [Tue Nov 30 22:23:16 2021] GET /static/bootstrap/js/bootstrap.min.js => generated 2148 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/layer/layer.js
+[pid: 16299|app: 0|req: 33/33] 127.0.0.1 () {48 vars in 812 bytes} [Tue Nov 30 22:23:16 2021] GET /static/layer/layer.js => generated 2103 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 34/34] 127.0.0.1 () {60 vars in 1176 bytes} [Tue Nov 30 22:29:05 2021] GET /article/article_create => generated 2462 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 16299|app: 0|req: 35/35] 127.0.0.1 () {60 vars in 1176 bytes} [Tue Nov 30 22:29:06 2021] GET /article/article_create => generated 2462 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 16299|app: 0|req: 36/36] 127.0.0.1 () {60 vars in 1176 bytes} [Tue Nov 30 22:29:06 2021] GET /article/article_create => generated 2462 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Nov 30 22:32:06 2021] ***
+compiled with version: 4.8.5 on 24 November 2021 16:02:39
+os: Linux-5.13.0-21-generic #21-Ubuntu SMP Tue Oct 19 08:59:28 UTC 2021
+nodename: alin-Lenovo-Legion-R9000P2021H
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/alin/桌面/Blog/Blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/alin/anaconda3/bin/uwsgi
+chdir() to /home/alin/桌面/Blog
+your processes number limit is 55149
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.8.8 (default, Apr 13 2021, 19:58:26)  [GCC 7.3.0]
+Python main interpreter initialized at 0x1d87c80
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1d87c80 pid: 19197 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19197)
+spawned uWSGI worker 1 (pid: 19199, cores: 2)
+[pid: 19199|app: 0|req: 1/1] 127.0.0.1 () {60 vars in 1176 bytes} [Tue Nov 30 22:32:19 2021] GET /article/article_create => generated 2462 bytes in 89 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 19199|app: 0|req: 2/2] 127.0.0.1 () {60 vars in 1176 bytes} [Tue Nov 30 22:32:20 2021] GET /article/article_create => generated 2462 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 19199|app: 0|req: 3/3] 127.0.0.1 () {58 vars in 1141 bytes} [Tue Nov 30 22:32:22 2021] GET /article/article_list => generated 1640 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 19199|app: 0|req: 4/4] 127.0.0.1 () {58 vars in 1145 bytes} [Tue Nov 30 22:32:24 2021] GET /article/article_create => generated 2462 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 19199|app: 0|req: 5/5] 127.0.0.1 () {58 vars in 1147 bytes} [Tue Nov 30 22:32:24 2021] GET /article/article_create => generated 2462 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 19199|app: 0|req: 6/6] 127.0.0.1 () {52 vars in 928 bytes} [Tue Nov 30 22:32:27 2021] GET /article/article_create => generated 2462 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 19199|app: 0|req: 7/7] 127.0.0.1 () {52 vars in 928 bytes} [Tue Nov 30 22:32:28 2021] GET /article/article_create => generated 2462 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 19199|app: 0|req: 8/8] 127.0.0.1 () {60 vars in 1172 bytes} [Tue Nov 30 22:32:52 2021] GET /article/article_list => generated 1640 bytes in 50 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 19199|app: 0|req: 9/9] 127.0.0.1 () {60 vars in 1172 bytes} [Tue Nov 30 22:32:53 2021] GET /article/article_list => generated 1640 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 19199|app: 0|req: 10/10] 127.0.0.1 () {62 vars in 1194 bytes} [Tue Nov 30 22:34:06 2021] GET /article/article_list => generated 1640 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 19199|app: 0|req: 11/11] 127.0.0.1 () {62 vars in 1194 bytes} [Tue Nov 30 22:34:08 2021] GET /article/article_list => generated 1640 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 19199|app: 0|req: 12/12] 127.0.0.1 () {58 vars in 1141 bytes} [Tue Nov 30 22:35:17 2021] GET /article/article_list => generated 1640 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 19199|app: 0|req: 13/13] 127.0.0.1 () {58 vars in 1145 bytes} [Tue Nov 30 22:35:18 2021] GET /article/article_create => generated 2462 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Nov 30 22:46:51 2021] ***
+compiled with version: 4.8.5 on 24 November 2021 16:02:39
+os: Linux-5.13.0-21-generic #21-Ubuntu SMP Tue Oct 19 08:59:28 UTC 2021
+nodename: alin-Lenovo-Legion-R9000P2021H
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/alin/桌面/Blog/Blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/alin/anaconda3/bin/uwsgi
+chdir() to /home/alin/桌面/Blog
+your processes number limit is 55149
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.8.8 (default, Apr 13 2021, 19:58:26)  [GCC 7.3.0]
+Python main interpreter initialized at 0x1c40c80
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1c40c80 pid: 21569 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21569)
+spawned uWSGI worker 1 (pid: 21571, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 21571|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1085 bytes} [Tue Nov 30 22:47:12 2021] GET /article/article_create => generated 2462 bytes in 87 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Nov 30 23:57:39 2021] ***
+compiled with version: 4.8.5 on 24 November 2021 16:02:39
+os: Linux-5.13.0-21-generic #21-Ubuntu SMP Tue Oct 19 08:59:28 UTC 2021
+nodename: alin-Lenovo-Legion-R9000P2021H
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /home/alin/桌面/Blog/Blog
+writing pidfile to uwsgi.pid
+detected binary path: /home/alin/anaconda3/bin/uwsgi
+chdir() to /home/alin/桌面/Blog
+your processes number limit is 55149
+your memory page size is 4096 bytes
+detected max file descriptor number: 8192
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.8.8 (default, Apr 13 2021, 19:58:26)  [GCC 7.3.0]
+Python main interpreter initialized at 0x26d5c80
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x26d5c80 pid: 28148 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28148)
+spawned uWSGI worker 1 (pid: 28153, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+[pid: 28153|app: 0|req: 1/1] 127.0.0.1 () {56 vars in 1125 bytes} [Tue Nov 30 23:57:59 2021] GET /article/article_list => generated 1989 bytes in 75 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 2/2] 127.0.0.1 () {58 vars in 1185 bytes} [Tue Nov 30 23:58:01 2021] GET /article/article_list => generated 1989 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 3/3] 127.0.0.1 () {58 vars in 1189 bytes} [Tue Nov 30 23:58:03 2021] GET /article/article_create => generated 2462 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 4/4] 127.0.0.1 () {58 vars in 1160 bytes} [Tue Nov 30 23:58:22 2021] GET /article/article_create => generated 2462 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 5/5] 127.0.0.1 () {50 vars in 839 bytes} [Tue Nov 30 23:58:39 2021] GET /article/article_create => generated 2462 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 6/6] 127.0.0.1 () {50 vars in 897 bytes} [Tue Nov 30 23:58:49 2021] GET /article/article_create => generated 2462 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 7/7] 127.0.0.1 () {60 vars in 1220 bytes} [Wed Dec  1 00:16:40 2021] GET /article/article_create => generated 2590 bytes in 48 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+<WSGIRequest: POST '/article/article_create'>
+<QueryDict: {'csrfmiddlewaretoken': ['jt7FaozjZqrHOf3pnyBtyPaYOc1GWYxNn4MQy3cq0OIa5M7LCbJAaOWp3zOFimgV'], 'title': ['1'], 'content': ['1']}>
+[pid: 28153|app: 0|req: 8/8] 127.0.0.1 () {66 vars in 1370 bytes} [Wed Dec  1 00:16:53 2021] POST /article/article_create => generated 0 bytes in 9 msecs (HTTP/1.1 302) 4 headers in 143 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 9/9] 127.0.0.1 () {60 vars in 1218 bytes} [Wed Dec  1 00:16:53 2021] GET /article/article_list => generated 2466 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 10/10] 127.0.0.1 () {58 vars in 1193 bytes} [Wed Dec  1 00:16:55 2021] GET /article/article_detail/3 => generated 3332 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 11/11] 127.0.0.1 () {60 vars in 1224 bytes} [Wed Dec  1 00:20:18 2021] GET /article/article_detail/3 => generated 3645 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 12/12] 127.0.0.1 () {58 vars in 1189 bytes} [Wed Dec  1 00:20:24 2021] GET /article/article_list => generated 2779 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 13/13] 127.0.0.1 () {58 vars in 1189 bytes} [Wed Dec  1 00:20:27 2021] GET /article/article_create => generated 2903 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+<WSGIRequest: POST '/article/article_create'>
+<QueryDict: {'csrfmiddlewaretoken': ['rGLqzE2vt0UglX8SxeEfrRHxylYRiWnuvhqBXjFCuobJCuceMRMm3QtYNILQEk6C'], 'title': ['3'], 'content': ['3']}>
+[pid: 28153|app: 0|req: 14/14] 127.0.0.1 () {66 vars in 1370 bytes} [Wed Dec  1 00:20:32 2021] POST /article/article_create => generated 0 bytes in 8 msecs (HTTP/1.1 302) 4 headers in 143 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 15/15] 127.0.0.1 () {60 vars in 1218 bytes} [Wed Dec  1 00:20:32 2021] GET /article/article_list => generated 3128 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 16/16] 127.0.0.1 () {58 vars in 1189 bytes} [Wed Dec  1 00:27:34 2021] GET /article/article_create => generated 3011 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+<WSGIRequest: POST '/article/article_create'>
+<QueryDict: {'csrfmiddlewaretoken': ['snkuE2TedzXJVAqsW3uFZG255ovGbWcPwYZF2HwleXecc7uObGCMBFOwkLiFxkVX'], 'title': [''], 'content': ['```python\r\n\r\ndef test(name):\r\n    return name\r\n```']}>
+[pid: 28153|app: 0|req: 17/17] 127.0.0.1 () {66 vars in 1370 bytes} [Wed Dec  1 00:28:30 2021] POST /article/article_create => generated 40 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 108 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 18/18] 127.0.0.1 () {56 vars in 1164 bytes} [Wed Dec  1 00:28:33 2021] GET /article/article_create => generated 3011 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+<WSGIRequest: POST '/article/article_create'>
+<QueryDict: {'csrfmiddlewaretoken': ['2FCotn8IFT3BKp9O1KitgszKIXm6qEaY6ghzR2LPGhk41WdagnqASrlbXk95M2T6'], 'title': ['4'], 'content': ['```python\r\n\r\ndef test(name):\r\n    return name\r\n```']}>
+[pid: 28153|app: 0|req: 19/19] 127.0.0.1 () {66 vars in 1370 bytes} [Wed Dec  1 00:28:36 2021] POST /article/article_create => generated 0 bytes in 16 msecs (HTTP/1.1 302) 4 headers in 143 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 20/20] 127.0.0.1 () {60 vars in 1218 bytes} [Wed Dec  1 00:28:36 2021] GET /article/article_list => generated 3634 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 21/21] 127.0.0.1 () {58 vars in 1193 bytes} [Wed Dec  1 00:28:38 2021] GET /article/article_detail/5 => generated 4006 bytes in 60 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 22/22] 127.0.0.1 () {58 vars in 1197 bytes} [Wed Dec  1 00:29:22 2021] GET /article/article_update/5 => generated 3044 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 23/23] 127.0.0.1 () {66 vars in 1380 bytes} [Wed Dec  1 00:29:27 2021] POST /article/article_update/5 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 4 headers in 147 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 24/24] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 00:29:27 2021] GET /article/article_detail/5 => generated 13285 bytes in 42 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 25/25] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 00:34:28 2021] GET /article/article_detail/5 => generated 13285 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 26/26] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 00:38:24 2021] GET /article/article_detail/5 => generated 13385 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 27/27] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 00:38:33 2021] GET /article/article_detail/5 => generated 13385 bytes in 73 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 28/28] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 00:45:58 2021] GET /article/article_detail/5 => generated 13400 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 29/29] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 00:46:03 2021] GET /article/article_detail/5 => generated 13400 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 30/30] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 01:09:27 2021] GET /article/article_detail/5 => generated 13391 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 31/31] 127.0.0.1 () {58 vars in 1197 bytes} [Wed Dec  1 01:09:54 2021] GET /article/article_update/5 => generated 9751 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 32/32] 127.0.0.1 () {66 vars in 1380 bytes} [Wed Dec  1 01:10:10 2021] POST /article/article_update/5 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 4 headers in 147 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 33/33] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 01:10:10 2021] GET /article/article_detail/5 => generated 13920 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 34/34] 127.0.0.1 () {58 vars in 1197 bytes} [Wed Dec  1 01:10:39 2021] GET /article/article_update/5 => generated 9753 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 28153|app: 0|req: 35/35] 127.0.0.1 () {66 vars in 1380 bytes} [Wed Dec  1 01:10:49 2021] POST /article/article_update/5 => generated 0 bytes in 11 msecs (HTTP/1.1 302) 4 headers in 147 bytes (1 switches on core 1)
+[pid: 28153|app: 0|req: 36/36] 127.0.0.1 () {60 vars in 1228 bytes} [Wed Dec  1 01:10:49 2021] GET /article/article_detail/5 => generated 24309 bytes in 39 msecs (HTTP/1.1 200) 5 headers in 293 bytes (1 switches on core 0)
