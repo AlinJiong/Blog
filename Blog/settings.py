@@ -127,6 +127,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static')),
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static')
+# # STATIC_ROOT = '/home/alin/桌面/Blog/collect_static/static'
+# # 最后设置，并且nginx只取base_dir的绝对地址
+# STATIC_ROOT = os.path.join(BASE_DIR, 'collect_static/static')
+
+if not DEBUG:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# 非部署时，debug为True，使用以下代替STATIC_ROOT才能加载上传的图片
+else:
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),
+    )
