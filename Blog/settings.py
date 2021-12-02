@@ -24,7 +24,7 @@ SECRET_KEY = 'dg4$nd3175_o#1^^=w8&*62e_==ilr4by6cezu3oifho)xtozv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.sabery.top', '127.0.0.1']
 
 # Application definition
 
@@ -63,6 +63,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': ['django.templatetags.static']
         },
     },
 ]
@@ -137,6 +138,4 @@ if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 非部署时，debug为True，使用以下代替STATIC_ROOT才能加载上传的图片
 else:
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
