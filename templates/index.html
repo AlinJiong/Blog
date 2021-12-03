@@ -30,14 +30,11 @@
 
                     <p>Catch me:</p>
                     <div class="row">
-                        <button id="kaygb-blog" class="btn btn-primary col-lg-4">BLOG</button>
-                        <a href="https://sabery.top" id="kaygb-blog-a" target="_blank"
-                            class="btn btn-primary col-lg-4">BLOG</a>
+                        <button type="button" class="btn btn-primary col-lg-4" onclick="blog_click()">BLOG</button>
                         <a href="https://github.com/AlinJiong" target="_blank"
                             class="btn btn-secondary col-lg-4">GitHub</a>
-                        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=alinjiong@qq.com" target="_blank"
-                            id="kaygb-mail-a" class="btn btn-success col-lg-4">Send a Mail</a>
-                        <button id="kaygb-mail" class="btn btn-success col-lg-4">Send a Mail</button>
+                        <button type="button" class="btn btn-success col-lg-4" onclick="mail_click()">Send a
+                            Mail</button>
                     </div>
 
 
@@ -74,7 +71,7 @@
         <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
-        <script>
+        <!-- <script>
             //弹出一个页面层
             $('#kaygb-blog').on('click', function () {
                 layer.open({
@@ -98,6 +95,15 @@
                     content: '//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=alinjiong@qq.com'
                 });
             });
+        </script> -->
+        <script>
+            function blog_click() {
+                window.open("{% url 'article:article_list' %}")
+            }
+
+            function mail_click() {
+                window.open('https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=alinjiong@qq.com')
+            }
         </script>
 
 </html>
