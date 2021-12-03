@@ -8,3 +8,7 @@ def none_index(request):
 
 def index(request):
     return render(request, 'index.html')
+
+
+def login(request):
+    return HttpResponseRedirect('/user/login')

@@ -6,11 +6,17 @@ from django.shortcuts import render, redirect
 from .models import ArticlePost, ArticlePostForm
 import markdown
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 
 def article_list(request):
-    articles = ArticlePost.objects.all()
-    return render(request, 'article/list.html', locals())
+    if request.user.is_authenticated:
+        articles = ArticlePost.objects.filter(author=request.user)
+        return render(request, 'article/list.html', locals())
+    elif request.user.is_anonymous:
+        articles = ArticlePost.objects.filter(author=User.objects.get(
+            username='admin'))
+        return render(request, 'article/list.html', locals())
 
 
 def article_detail(request, id):
@@ -29,14 +35,14 @@ def article_detail(request, id):
     return render(request, 'article/detail.html', locals())
 
 
+@login_required
 def article_create(request):
     if request.method == 'POST':
-        print(request)
         article_post_form = ArticlePostForm(data=request.POST)
-        print(request.POST)
         if article_post_form.is_valid():
             new_article = article_post_form.save(commit=False)
-            new_article.author = User.objects.get(id=1)
+            new_article.author = User.objects.get(
+                username=request.POST['username'])
             new_article.save()
             return HttpResponseRedirect('/article/article_list')
             #return redirect('article:article_list')
@@ -47,6 +53,7 @@ def article_create(request):
         return render(request, 'article/create.html', locals())
 
 
+@login_required
 def article_delete(request, id):
     if request.method == 'POST':
         article = ArticlePost.objects.get(id=id)
@@ -56,6 +63,7 @@ def article_delete(request, id):
         return HttpResponse("仅允许post请求！")
 
 
+@login_required
 def article_update(request, id):
     article = ArticlePost.objects.get(id=id)
     if request.method == 'POST':
