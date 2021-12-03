@@ -47,6 +47,8 @@ def user_register(request):
             new_user.save()
             login(request, new_user)
             return HttpResponseRedirect('/article/article_list')
+        else:
+            return HttpResponse('注册表单输入有误。请重新输入！')
     elif request.method == 'GET':
         user_login_form = UserRegiterForm()
         return render(request, 'user/register.html', locals())
