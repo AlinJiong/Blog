@@ -27,3 +27,6 @@ urlpatterns = [
     path('index', views.index),
     path('accounts/login/', views.login),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+handler404 = views.page_not_found
+handler500 = views.server_error

@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="zh">
 
 	<head>
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="bookmark" href="/favicon.ico" />
-		<title> 4 0 4</title>
+		<link rel="shortcut icon" href="{% static 'errors/favicon.ico' %}" />
+		<link rel="bookmark" href="{% static 'errors/favicon.ico' %}" />
+		<title> 404 page</title>
 		<!-- Meta tag Keywords -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8" />
@@ -20,10 +22,10 @@
 		</script>
 		<!-- //Meta tag Keywords -->
 		<!--/Style-CSS -->
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="{% static 'errors/css/style.css' %}" type="text/css" media="all" />
 		<!--//Style-CSS -->
 		<!-- font-awesome-icons -->
-		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
 		<!-- //font-awesome-icons -->
 	</head>
 
@@ -39,7 +41,7 @@
 							<a href="https://www.love.alinjiong.ml"><u>
 									<font color=#B0C4DE>解决方法...</font>
 								</u></a>
-							<form action="https://www.love.alinjiong.ml" method="post" class="d-flex error-page-form">
+							<form action="https://www.love.alinjiong.ml" method="get" class="d-flex error-page-form">
 								<font style="color:#ffffff;font-size:21px;font-weight:bold;">
 									&nbsp;&nbsp;≧◉◡◉≦&nbsp;&nbsp;亲爱的不要急，来随便逛逛吧：</font></a>
 								<button type="submit"><span class="fa fa-film"
