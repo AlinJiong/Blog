@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dg4$nd3175_o#1^^=w8&*62e_==ilr4by6cezu3oifho)xtozv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.blog.alinjiong.ml', '127.0.0.1']
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'article',
     'user',
+    'captcha',
 ]
 
 MIDDLEWARE = [

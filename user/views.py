@@ -40,17 +40,17 @@ def user_logout(request):
 
 def user_register(request):
     if request.method == 'POST':
-        user_login_form = UserRegiterForm(data=request.POST)
-        if user_login_form.is_valid():
-            new_user = user_login_form.save(commit=False)
-            new_user.set_password(user_login_form.cleaned_data['password'])
+        user_register_form = UserRegiterForm(data=request.POST)
+        if user_register_form.is_valid():
+            new_user = user_register_form.save(commit=False)
+            new_user.set_password(user_register_form.cleaned_data['password'])
             new_user.save()
             login(request, new_user)
             return HttpResponseRedirect('/article/article_list')
         else:
             return HttpResponse('注册表单输入有误。请重新输入！')
     elif request.method == 'GET':
-        user_login_form = UserRegiterForm()
+        user_register_form = UserRegiterForm()
         return render(request, 'user/register.html', locals())
     else:
         return HttpResponse("请使用GET或POST请求数据")
