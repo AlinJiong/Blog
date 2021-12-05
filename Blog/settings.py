@@ -24,7 +24,7 @@ SECRET_KEY = 'dg4$nd3175_o#1^^=w8&*62e_==ilr4by6cezu3oifho)xtozv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.love.alinjiong.ml', '127.0.0.1']
+ALLOWED_HOSTS = ['.blog.alinjiong.ml', '127.0.0.1']
 
 # Application definition
 
