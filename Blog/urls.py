@@ -27,6 +27,7 @@ urlpatterns = [
     path('index', views.index),
     path('accounts/login/', views.login),
     path('captcha', include('captcha.urls')),
+    path('refresh_captcha/', views.refresh_captcha),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = views.page_not_found
