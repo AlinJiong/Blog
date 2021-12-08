@@ -1,0 +1,5 @@
+安装
+pip install -r requriements.txt
+
+导出
+pipreqs ./ --encoding=utf8
