@@ -1,4 +1,4 @@
 Django==2.2.12
 django_recaptcha==2.0.6
 Markdown==3.3.6
-uwsgi=2.0.18
+uwsgi==2.0.18
