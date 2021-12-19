@@ -1,11 +1,14 @@
 from django.contrib.auth.models import User
 from django.http.response import HttpResponse
 from django.shortcuts import render
+from rest_framework import serializers, viewsets
 
 from user.models import UserLoginForm, UserRegiterForm
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
+
+from .serializer import UserSerializer
 
 # Create your views here.
 
@@ -68,3 +71,8 @@ def user_delete(request, id):
             return HttpResponse("你没有操作权限！")
     else:
         HttpResponse("仅接受post请求！")
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

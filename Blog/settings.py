@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'article',
     'user',
     'captcha',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,10 @@ if not DEBUG:
 # 非部署时，debug为True，使用以下代替STATIC_ROOT才能加载上传的图片
 else:
     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAdminUser',
+    ],
+    'PAGE_SIZE': 10
+}

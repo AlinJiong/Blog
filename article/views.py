@@ -3,11 +3,13 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render, redirect
+
+from article.serializer import ArticleSerializer
 from .models import ArticlePost, ArticlePostForm
 import markdown
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-
+from rest_framework import serializers, viewsets
 
 def article_list(request):
     if request.user.is_authenticated:
@@ -79,3 +81,9 @@ def article_update(request, id):
     else:
         article_post_form = ArticlePostForm()
         return render(request, 'article/update.html', locals())
+
+
+
+class ArticleViewSet(viewsets.ModelViewSet):
+    queryset = ArticlePost.objects.all().order_by('-create_time')
+    serializer_class = ArticleSerializer
