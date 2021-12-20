@@ -85,5 +85,5 @@ def article_update(request, id):
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
-    queryset = ArticlePost.objects.all().order_by('-create_time')
+    queryset = ArticlePost.objects.all()
     serializer_class = ArticleSerializer

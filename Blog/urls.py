@@ -19,6 +19,13 @@ from django.conf.urls.static import static
 from django.conf import settings
 from . import views
 from django.conf.urls import url, include
+from rest_framework import routers
+from article.views import ArticleViewSet
+from user.views import UserViewSet
+
+router = routers.DefaultRouter()
+router.register(r'user', UserViewSet)
+router.register(r'article', ArticleViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,7 +36,8 @@ urlpatterns = [
     path('accounts/login/', views.login),
     path('captcha', include('captcha.urls')),
     url(r'^api-auth/',
-        include('rest_framework.urls', namespace='rest_framework'))
+        include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api/', include(router.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = views.page_not_found
