@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dg4$nd3175_o#1^^=w8&*62e_==ilr4by6cezu3oifho)xtozv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.blog.alinjiong.ml', '127.0.0.1']
+ALLOWED_HOSTS = ['sabery.top', '127.0.0.1']
 
 # Application definition
 
@@ -143,7 +143,8 @@ else:
     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 
 REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_PAGINATION_CLASS':
+    'rest_framework.pagination.PageNumberPagination',
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAdminUser',
     ],
