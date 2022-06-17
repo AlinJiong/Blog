@@ -3,3 +3,5 @@ Blog/uwsgi.log
 Blog/uwsgi.pid
 *.pyc
 db.sqlite3
+
+*.idea
